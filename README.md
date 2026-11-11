@@ -57,7 +57,7 @@ Este proyecto simula el núcleo de un sistema de gestión de biblioteca universi
 
 ### 5. Pregunta Reflexiva
 * **Si guardas dos objetos `Libro` con el mismo código en un `HashSet`, ¿Java los detecta como duplicados?**  
-  Por defecto **no**. Java compara las referencias en memoria (si son el mismo objeto en memoria). Para que los considere duplicados por código o título, es obligatorio sobrescribir los métodos `equals()` y `hashCode()` en la clase.
+  No, por defecto Java no los detecta como duplicados. Como nuestra clase Material y sus subclases no sobreescriben los métodos equals() y hashCode(), Java compara las referencias de memoria de los objetos y no sus atributos internos (como el código o el título). Por lo tanto, si se crearan dos instancias distintas con el mismo código, Java permitiría almacenar ambas en el HashSet.
 
 ---
 
