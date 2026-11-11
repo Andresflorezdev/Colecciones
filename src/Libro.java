@@ -1,6 +1,6 @@
 public class Libro extends Material {
 
-    // atributis
+    // atributos
     private String autor;
     private String isbn;
 

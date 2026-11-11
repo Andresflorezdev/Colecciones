@@ -51,6 +51,6 @@ public class SistemaBiblioteca {
     }
 
     public boolean tieneMembresia(String usuario) {
-        return miembros.contains((usuario));
+        return miembros.contains(usuario);
     }
 }

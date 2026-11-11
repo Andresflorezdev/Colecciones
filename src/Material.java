@@ -41,6 +41,6 @@ public abstract class Material implements Catalogable {
     // metodo aplicando polimorfismo en el getTipo
     public void mostrarInfo() {
         String estado = disponible ? "disponible": "prestado";
-        System.out.println( getTipo() + titulo + año + estado);
+        System.out.println("[" + getTipo() + "] " + titulo + " (" + año + ") — " + estado);
     }
 }
